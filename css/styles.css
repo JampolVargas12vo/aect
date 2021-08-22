@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Crimson Text', serif;
+}
+:root{
+    --blue: #0D3B99;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(67, 67, 67,0.5) 0%, rgba(0, 0, 0,0.5) 100%), url(https://www.aeropuertos.net/wp-content/uploads/2010/02/salidas-del-aeropuerto-ministro-pistarini-en-argentina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    background: transparent;
+    transition: 0.3s ease-out;
+}
+.color{
+    background: #1659df;
+    transition: 0.3s ease-out;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.logo img{
+    width: 60px;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 17.5px;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.header-informacion{
+    color: white;
+    width: 90%;
+}
+.header-informacion .btn{
+    width: 145px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid var(--blue);
+    color: white;
+    font-size: 16.5px;
+    font-weight: 900;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    font-family: 'Crimson Text', serif;
+}
+.header-informacion .btn:hover{
+    background: var(--blue);
+}
+.header-informacion-title{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+/* informacion 1 */
+.informacion_1{
+    margin: 50px 0;
+}
+.informacion_1 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.informacion_1 p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.informacion_1-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    margin: auto;
+}
+.informacion_1-img img{
+    width: 90%;
+    height: 250px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+/* alineacion */
+.informacion_1-img h3{
+    margin-top: 5px;
+    margin-left: 20px; 
+}
+.informacion_1-img p{
+    text-align: start;
+    margin-left: 20px;
+}
+/* informacion 2 */
+.informacion_2{
+    width: 100%;
+    background: rgba(17, 17, 17, 0.9);
+    color: white;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+}
+.informacion_2 h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.informacion_2 h1,
+.informacion_2 p{
+    text-align: center;
+}
+.iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.iconos div{
+    width: 80%;
+    margin: auto;
+    margin: 20px 0;
+}
+.iconos h3{
+    margin-top: 10px;
+}
+.iconos .fa-hands-helping,
+.iconos .fa-users,
+.iconos .fa-globe-americas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 10px;
+}
+/* informacion 3 */
+.informacion_3{
+    margin-bottom: 50px;
+}
+.informacion_3-titulo{
+    text-align: center;
+}
+.informacion_3-titulo h1{
+    font-size: 40px;
+}
+.informacion_3-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.informacion_3-img div{
+    margin-top: 20px;
+    width: 80%;
+    height: 400px;
+    margin-left: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.informacion_3-img h3{
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    visibility: hidden;
+    transition: 0.1s linear;
+}
+.informacion_3-img-1{
+    background-image:url(https://a.cdn-hotels.com/gdcs/production148/d757/6059b2a0-8f10-11e8-a0da-0242ac11004d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.informacion_3-img-1:hover h3 {
+    visibility: visible;
+    top: 0;
+    transition: 0.3s linear;
+}
+.informacion_3-img-1:hover{
+    background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+    url(https://a.cdn-hotels.com/gdcs/production148/d757/6059b2a0-8f10-11e8-a0da-0242ac11004d.jpg);
+}
+.informacion_3-img-2{
+    background: url(https://ichef.bbci.co.uk/news/640/cpsprodpb/280A/production/_114205201_image00103.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.informacion_3-img-2:hover h3 {
+    visibility: visible;
+    top: 0;
+    transition: 0.3s linear;
+}
+.informacion_3-img-2:hover{
+    background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+    url(https://ichef.bbci.co.uk/news/640/cpsprodpb/280A/production/_114205201_image00103.jpg);
+}
+.informacion_3-img-3{
+    background: url(https://astelus.com/wp-content/viajes/Londres1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.informacion_3-img-3:hover h3 {
+    visibility: visible;
+    top: 0;
+    transition: 0.3s linear;
+}
+.informacion_3-img-3:hover{
+    background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+    url(https://astelus.com/wp-content/viajes/Londres1.jpg);
+}
+/* opinion */
+.opinion-container{
+    width: 100%;
+    background: rgba(17, 17, 17, 0.9);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+.opinion form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 450px;
+    width: 420px;
+    margin-top: 30px;
+    color: #fff;
+}
+.opinion form input{
+    outline: none;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    font-size: 15.5px;
+    margin: 10px 0;
+    background: rgba(17, 17, 17, 0.7);
+    border-bottom: 1px solid white;
+    color: #fff;
+}
+.opinion form textarea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 15.5px;
+    background: rgba(17, 17, 17, 0.7);
+    border-bottom: 1px solid white;
+    color: #fff;
+    margin: 10px 0;
+    resize: none;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:25px;
+    font-size: 18px;
+    color: white;
+    width: 13.5%;
+}
+.social-media h3{
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.social-media span{
+    cursor: pointer;
+}
+.opinion .opinion-btn{
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 15.5px;
+    background: rgba(17, 17, 17, 0.7);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.opinion .opinion-btn:hover{
+    background: rgba(17, 17, 17, 0.5);
+    transition: 0.3s ease;
+}
+.copy{
+    text-align: center;
+    background: #111;
+    color: #fff;
+    font-size: 15.5px;
+}
+/* boton responsive */
+.btn-responsive{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:720px){
+    .lista{
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        background: #fff;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: 'Jost', sans-serif;
+        transform: scale(0);
+        transition: 0.3s ease-in-out;
+    }
+    .lista li a{
+        color: #000;
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .btn-responsive{
+        display:flex;
+        margin-bottom: 5px;
+        z-index: 101;
+        color: black;
+    }
+    .view{
+       
+        color: white;
+    }
+    nav{
+        padding: 0 20px;
+        z-index: 100;
+    }
+    .header-informacion{
+        margin-top: 20px;
+    }
+    .informacion_1-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .iconos{
+        flex-wrap: wrap;
+    }
+    .informacion_3-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-informacion .btn{
+        background: var(--blue);
+    }
+    .informacion_3-img-1{
+        background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+    url(https://a.cdn-hotels.com/gdcs/production148/d757/6059b2a0-8f10-11e8-a0da-0242ac11004d.jpg);
+    }
+    .informacion_3-img h3 {
+        visibility: visible;
+        top: 0;
+        transition: 0.3s linear;
+    }
+    .informacion_3-img-2{
+        background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+    url(https://ichef.bbci.co.uk/news/640/cpsprodpb/280A/production/_114205201_image00103.jpg);
+    }
+    .informacion_3-img-3{
+        background-image: linear-gradient(to top, rgba(0, 198, 251,0.5) 0%, rgba(0, 91, 234,0.5) 100%),
+        url(https://astelus.com/wp-content/viajes/Londres1.jpg);
+    }
+    .opinion-container{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .social-media{
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .opinion form{
+        padding: 0 20px;
+        width: 100%;
+    }
+    .social-media span{
+        margin-top: 20px;
+        margin: 20px auto;
+    }
+    .social-media h3{
+        text-align: center;
+        font-size: 33px;
+    }
+    hr{
+        width: 50%;
+        margin: auto;
+    }
+    .show{
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+}
